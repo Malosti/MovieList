@@ -7,10 +7,10 @@
 <h2 class="page-title">My favorite movies</h2>
 
 <p>
-    <a class="link-pages" asp-action="Create">Add Movie</a>
+    <a style="color:white; text-decoration:none" asp-action="Create">Add Movie</a>
 </p>
 <table class="table">
-    <tbody>
+    <tbody style="text-align: center">
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -23,9 +23,9 @@
                 @Html.DisplayFor(modelItem => item.Rating)
             </td>
             <td>
-                <a class="link-pages" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a class="link-pages" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a class="link-pages" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a  asp-action="Edit" asp-route-id="@item.Id">Edit</a> &nbsp	&loz;
+                <a  asp-action="Details" asp-route-id="@item.Id">Details</a> &nbsp	&loz;
+                <a  asp-action="Delete" asp-route-id="@item.Id">Delete</a> &nbsp
             </td>
         </tr>
 }
