@@ -36,7 +36,7 @@
 
 .menu-title {   
     text-align: center;
-    font-size: 4em;
+    font-size: 2em;
     font-family: 'Trebuchet MS';
 }
 
@@ -45,11 +45,15 @@
     color: black;
 }
 
+#main-title{
+    font-family: Cine;
+    font-size: 3.5em;
+}
+
 .index{
-    margin-top: 100px;
+    margin-top: 50px;
     padding-right: 60px;
     text-align:center;
-
 }
 
 
