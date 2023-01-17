@@ -108,7 +108,7 @@ body {
     font-size: 5em;
 }
 
-.link-pages {
+.link-pages a{
     text-decoration: none;
     color: white;
 }

@@ -19,7 +19,7 @@ namespace MovieList.Controllers
         // GET: Movies
         public async Task<IActionResult> Index()
         {
-            return View(await _context.MovieModel.ToListAsync());
+            return View(await _context.MovieModel.AsNoTracking().OrderByDescending(x=>x.Rating).ToListAsync());
         }
 
         // GET: Movies/Details/5
